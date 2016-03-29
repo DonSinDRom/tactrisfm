@@ -44,7 +44,6 @@
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
-        "PORT": 8080,
         "APIPORT": 3030
       }
     },
@@ -90,6 +89,8 @@
     }
   },
   "dependencies": {
+    "aframe": "^0.2.0",
+    "aframe-react": "^1.2.0",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.1",
     "babel-plugin-add-module-exports": "^0.1.2",
@@ -131,6 +132,7 @@
     "redux-async-connect": "^1.0.0-rc2",
     "redux-form": "^3.0.12",
     "resolve-url-loader": "^1.4.3",
+    "rethinkdb": "^2.2.2",
     "scroll-behavior": "^0.3.2",
     "serialize-javascript": "^1.1.2",
     "serve-favicon": "^2.3.0",

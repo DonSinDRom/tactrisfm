@@ -365,8 +365,7 @@ export const FIGURES = [
   ] // 18
 ];
 
-export const DIMENSION = 10;
-export const SCALE = 1;
+export const DIMENSION = 12;
 
 export const TEXTURE = {
   map: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANUlEQVQYV2P8////fwY8gBGkgJGREasSkF64AnSDQJowFMBMAkuQpQDZIRgmYHMl3A34vAkAAKhD6ZBmpSQAAAAASUVORK5CYII=',
@@ -408,5 +407,6 @@ export const STATUS = {
   }
 };
 
-export const SIDE = 2;
-export const MARGIN = 0.4;
+export const SCALE = 1;
+export const SIDE = 1;
+export const MARGIN = 0.2;

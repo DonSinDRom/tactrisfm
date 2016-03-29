@@ -1,7 +1,10 @@
 import { Object3D } from 'three';
 import TWEEN from 'tween';
-import { FIGURES, DIMENSION, SCALE, STATUS, SIDE, MARGIN } from 'constants';
+import { FIGURES, DIMENSION, SCALE, STATUS } from 'constants';
 import Box from './box';
+
+const SIDE = 2;
+const MARGIN = 0.4;
 
 export default class Arena extends Object3D {
   constructor(data$figures, action$generate, action$increment, action$gameOver) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { IndexRoute, Route } from 'react-router';
-import { App, PlayGround } from 'containers';
+import { App, PlayCanvas, PlayVR } from 'containers';
 
 export default () => {
   /**
@@ -8,7 +8,9 @@ export default () => {
    */
   return (
     <Route path="/" component={App}>
-      <IndexRoute component={PlayGround}/>
+      <IndexRoute component={PlayCanvas} />
+      <Route path="vr" component={PlayVR} />
+      <Route path="canvas3d" component={PlayCanvas} />
     </Route>
   );
 };

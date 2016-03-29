@@ -1,7 +1,10 @@
 import THREE, { Object3D } from 'three';
 import TWEEN from 'tween';
-import { FIGURES, DIMENSION, SCALE, SIDE, MARGIN } from 'constants';
+import { FIGURES, DIMENSION, SCALE } from 'constants';
 import Box from './box';
+
+const SIDE = 2;
+const MARGIN = 0.4;
 
 export default class Figures extends Object3D {
   constructor(data$figures) {

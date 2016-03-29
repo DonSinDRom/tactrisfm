@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import { GameOver } from 'components';
-import { Canvas3D } from 'canvas';
+import { VR } from 'canvas';
 
 import { generate } from 'redux/modules/figures';
 import { increment } from 'redux/modules/score';
@@ -15,7 +15,7 @@ import { gameOver } from 'redux/modules/gameover';
     gameover: state.gameover
   }),
   { generate, increment, gameOver })
-export default class PlayGround extends Component {
+export default class PlayVR extends Component {
   static propTypes = {
     figures: PropTypes.array.isRequired,
     generate: PropTypes.func.isRequired,
@@ -26,7 +26,7 @@ export default class PlayGround extends Component {
   };
 
   render() {
-    const styles = require('./PlayGround.scss');
+    const styles = require('./PlayVR.scss');
     const { figures, score, gameover } = this.props;
     const modal = gameover ? <GameOver /> : undefined;
     return (
@@ -37,7 +37,7 @@ export default class PlayGround extends Component {
           </span>
           <span>Best: {score.best}</span>
         </header>
-        <Canvas3D
+        <VR
           figures={figures}
           generate={this.props.generate}
           score={score}

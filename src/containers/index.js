@@ -1,2 +1,3 @@
 export App from './App/App';
-export PlayGround from './PlayGround/PlayGround';
+export PlayCanvas from './PlayCanvas/PlayCanvas';
+export PlayVR from './PlayVR/PlayVR';
